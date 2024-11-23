@@ -1,5 +1,9 @@
 from flask import Flask, render_template_string
 import requests
+import os
+
+API_KEY = os.getenv('NEWS_API_KEY')  # Fetches API key from environment variables
+
 
 app = Flask(__name__)
 
